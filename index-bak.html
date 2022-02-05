@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Justin and Kaye are getting married">
+    <title>Justin & Kaye</title>
+    
+
+  <link href="bootstrap.min.css" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.1/css/lightgallery-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+
+    
+<style>
+
+html, body {height: 100%;}
+video {object-fit: cover;width: 100%;height: 100vh;}
+
+html {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+body {margin: 0;}
+
+
+.viewport-header {
+  position: absolute;
+  top: 0;
+  height: 80vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.viewport-header h1 {
+  font-family:'Playfair Display', serif;
+  color: #FFF;
+  font-size: 10vw;
+  text-align: center;
+  display: block;
+}
+.viewport-header span {
+    display: block;
+    font-size: 5vw;
+  }
+
+
+
+.countdown-contain{ font-size: 4vw; border-top: 1px solid; border-bottom: 1px solid; margin: 30px 30px 60px 30px; padding: 25px; 
+  font-family:'Playfair Display', serif; color: #866827; display: block;  text-align: center; }
+.countdown-contain h2 {font-size: 7vw;}
+
+
+  @media screen and (min-width: 1000px) {
+    .countdown-contain { font-size: 2vw;}
+    .countdown-contain h2 { font-size: 5vw;}
+    .viewport-header h1 { font-size: 8vw;}
+    .viewport-header span { font-size: 2vw;}
+}
+
+
+</style>
+</head>
+
+
+
+
+<body>
+
+
+
+<video playsinline autoplay muted loop id="bgvid"><source src="main1.mp4" type="video/mp4"></video>
+
+
+<header class="viewport-header">
+  <h1>
+    Kaye & Justin
+    <span>Toronto, Ontario</span>
+    <span>11  ∙ 12  ∙ 21</span>
+  </h1>
+</header>
+
+
+
+    
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+
+  <main>
+
+        <style>
+        .gallery { display: flex; }
+        .gallery a { display: block; margin-bottom: 15px; transition: box-shadow .3s;  transition: transform .3s;}
+        .gallery a:hover {box-shadow: 8px 7px 28px -5px rgba(0,0,0,0.5); transform: scale(1.03); }
+        .gallery .col1 { flex: 3; }
+        .gallery .col2 { flex: 4;}
+        .gallery .col3 { flex: 3;}
+        .gallery img.thumb { width: 100%;  }
+        </style>
+
+
+        <!-- Count Down -->
+        <div class="countdown-contain">
+          <h2><span id="countdown"></span>Days To Go</h2>
+         Until our wedding
+        </div>
+
+
+
+        <!-- Gallery -->
+        <div class="gallery row" id="lightgallery">
+
+              <!-- Col 1-->
+              <div class="col1">
+              <a href="img/eng/k074.jpg"><img class="thumb" src="img/eng/k074t.jpg"/></a>
+              <a href="img/eng/k104.jpg"><img class="thumb" src="img/eng/k104t.jpg"/></a>
+              <a href="img/eng/k093.jpg"><img class="thumb" src="img/eng/k093t.jpg"/></a>
+              <a href="img/eng/k119.jpg"><img class="thumb" src="img/eng/k119t.jpg"/></a>
+              <a href="img/eng/k021.jpg"><img class="thumb" src="img/eng/k021t.jpg"/></a>    
+              <a href="img/eng/k044.jpg"><img class="thumb" src="img/eng/k044t.jpg"/></a>
+              <a href="img/eng/k148.jpg"><img class="thumb" src="img/eng/k148t.jpg"/></a>
+              </div>
+
+              <!-- Col 2 -->
+              <div class="col2">
+              <a href="img/eng/k002.jpg"><img class="thumb" src="img/eng/k002t.jpg"/></a>
+              <a href="img/eng/k007.jpg"><img class="thumb" src="img/eng/k007t.jpg"/></a>
+              <a href="img/eng/k118.jpg"><img class="thumb" src="img/eng/k118t.jpg"/></a>
+              <a href="img/eng/k053.jpg"><img class="thumb" src="img/eng/k053t.jpg"/></a>  
+              <a href="img/eng/k143.jpg"><img class="thumb" src="img/eng/k143t.jpg"/></a>
+
+              </div>
+
+              <!-- Col 3 -->
+              <div class="col3">
+              <a href="img/eng/k145.jpg"><img class="thumb" src="img/eng/k145t.jpg"/></a>
+              <a href="img/eng/k042.jpg"><img class="thumb" src="img/eng/k042t.jpg"/></a>
+              <a href="img/eng/k134.jpg"><img class="thumb" src="img/eng/k134t.jpg"/></a>
+              <a href="img/eng/k048.jpg"><img class="thumb" src="img/eng/k048t.jpg"/></a>
+              <a href="img/eng/k156.jpg"><img class="thumb" src="img/eng/k156t.jpg"/></a>
+              <a href="img/eng/k064.jpg"><img class="thumb" src="img/eng/k064t.jpg"/></a>
+              <a href="img/eng/k131.jpg"><img class="thumb" src="img/eng/k131t.jpg"/></a>
+              </div>
+
+        </div><!-- end gallery-->
+
+
+
+  </main>
+
+
+  <footer class="pt-5 my-5 text-muted border-top" style="text-align: center;">
+    &#9829;
+  </footer>
+</div>
+
+
+
+    <script>
+    // Set the date we're counting down to
+    var countDownDate = new Date("Nov 12, 2021 16:00:00").getTime();
+
+    // Update the count down every 1 second
+    var x = setInterval(function() {
+
+      // Get today's date and time
+      var now = new Date().getTime();
+
+      // Find the distance between now and the count down date
+      var distance = countDownDate - now;
+
+      // Time calculations for days, hours, minutes and seconds
+      var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+      var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+
+      // Display the result in the element with id="demo"
+      document.getElementById("countdown").innerHTML = days + " ";
+
+      // If the count down is finished, write some text
+      if (distance < 0) {
+        clearInterval(x);
+        document.getElementById("countdown").innerHTML = "done!";
+      }
+    }, 1000);
+    </script>
+    <script src="bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.1/lightgallery.min.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.1/plugins/zoom/lg-zoom.umd.min.js"></script>
+    <script type="text/javascript">
+        lightGallery(document.getElementById('lightgallery'), {
+          plugins: [lgZoom],
+          selector: 'a',
+          zoomFromOrigin: false,
+          allowMediaOverlap: true,
+           mobileSettings: { 
+              controls: false, 
+              showCloseIcon: true,
+              download: true, 
+            }
+        });
+    </script>
+
+  </body>
+</html>
