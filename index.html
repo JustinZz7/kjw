@@ -4,16 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Justin and Kaye are getting married">
-    <title>Justin & Kaye</title>
+    <title>Kaye & Justin</title>
     
 
   <link href="bootstrap.min.css" rel="stylesheet">
   <link type="text/css" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.1/css/lightgallery-bundle.min.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-
-    
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 <style>
 
 html, body {height: 100%;}
@@ -53,11 +51,11 @@ body {margin: 0;}
 
 
 .message-contain{ font-size: 4vw; border-top: 1px solid #ececec; border-bottom: 1px solid #ececec; margin: 2em 30px 3em 30px; padding: 25px; 
-  font-family:'Playfair Display', serif; color: #555; display: block;  text-align: center; }
+  font-family: 'Nanum Myeongjo', serif; color: #555; display: block;  text-align: center; }
 
 
   @media screen and (min-width: 1000px) {
-    .message-contain { font-size: 2vw;}
+    .message-contain { font-size: 2vw; margin-left: 0; margin-right: 0;}
     .viewport-header h1 { font-size: 8vw;}
     .viewport-header span { font-size: 2vw;}
 }
@@ -69,7 +67,7 @@ body {margin: 0;}
 
 
 
-<body>
+<body id="maingallery">
 
 
 
@@ -131,8 +129,9 @@ body {margin: 0;}
               <!-- <a href="img/pub/w106.jpg"><img class="thumb" src="img/pub/w106t.jpg"/></a> -->
               <a href="img/pub/w116.jpg"><img class="thumb" src="img/pub/w116t.jpg"/></a>
               <!-- <a href="img/pub/w262.jpg"><img class="thumb" src="img/pub/w262t.jpg"/></a> -->
-              <a href="img/pub/w168.jpg"><img class="thumb" src="img/pub/w168t.jpg"/></a>
               <a href="img/pub/w244.jpg"><img class="thumb" src="img/pub/w244t.jpg"/></a>
+              <a href="img/pub/w168.jpg"><img class="thumb" src="img/pub/w168t.jpg"/></a>
+
               <a href="img/pub/w177.jpg"><img class="thumb" src="img/pub/w177t.jpg"/></a>
               </div>
 
@@ -268,7 +267,7 @@ body {margin: 0;}
 
 
         <!-- Gallery -->
-        <div class="gallery row" id="lightgallery">
+        <div class="gallery row" id="lightgallery2">
 
               <!-- Col 1-->
               <div class="col1">
@@ -325,7 +324,7 @@ body {margin: 0;}
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.1/plugins/zoom/lg-zoom.umd.min.js"></script>
     <script type="text/javascript">
-        lightGallery(document.getElementById('lightgallery'), {
+        lightGallery(document.getElementById('maingallery'), {
           plugins: [lgZoom],
           selector: 'a',
           zoomFromOrigin: false,
@@ -337,5 +336,6 @@ body {margin: 0;}
             }
         });
     </script>
+
   </body>
 </html>
