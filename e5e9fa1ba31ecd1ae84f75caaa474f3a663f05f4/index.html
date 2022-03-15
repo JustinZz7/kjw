@@ -24,6 +24,15 @@ html {
 body {margin: 0;}
 
 
+
+
+
+body {
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+
 .viewport-header {
   position: relative;
   top: -100vh;
@@ -67,7 +76,7 @@ body {margin: 0;}
 
 
 
-<body id="maingallery">
+<body id="maingallery" onload="document.body.style.opacity='1'">
 
 
 
@@ -179,7 +188,7 @@ body {margin: 0;}
 
 
         <!-- Count Down -->
-        <div class="message-contain"  id="title1">
+        <div class="message-contain"  id="what">
           Family
         </div>
 
@@ -452,8 +461,9 @@ body {margin: 0;}
 
 
     <script src="../bootstrap.bundle.min.js"></script>
-
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.1/lightgallery.min.js"></script>
+    
     <!-- lightgallery plugins -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.1/plugins/thumbnail/lg-thumbnail.umd.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.2.1/plugins/zoom/lg-zoom.umd.min.js"></script>
@@ -471,8 +481,14 @@ body {margin: 0;}
         });
     </script>
 
-    <script type="text/javascript">
-    document.getElementById('title1').scrollIntoView({block: 'start', behavior: 'smooth'});
-</script>
+    <script>
+      $(document).ready(function () {
+    // Handler for .ready() called.
+    $('html, body').animate({
+        scrollTop: $('#what').offset().top
+    }, 'slow');
+});
+    </script>
+  
   </body>
 </html>
